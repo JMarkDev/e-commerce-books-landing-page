@@ -229,8 +229,8 @@ h2{
     max-width: 100vw;
 }
 
-#highlights:after,
-#highlights:before{
+#highlights::after,
+#highlights::before{
     background: url('assets/wave.svg');
     content: "";
     position: absolute;
@@ -242,7 +242,7 @@ h2{
     z-index: 1;
 }
     
-#highlights:before{
+#highlights::before{
     top: 1px;
     transform: translateY(-100%);
 }
