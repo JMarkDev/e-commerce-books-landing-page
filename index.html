@@ -114,14 +114,14 @@
                         All <span class="purple">Books</span>
                     </h2>
                     <select id="filter" onchange="filterBooks(event)">
-                        <option value="" disable selected>Sort</option>
+                        <option value="DEFAULT">Default</option>
                         <option value="LOW_TO_HIGH">Price, Low to High</option>
                         <option value="HIGH_TO_LOW">Price, High to Low</option>
                         <option value="RATING">Rating</option>
                     </select>
                 </div>
-                <div class="books">
-
+                <div class="books books__loading">
+                    <i class="fas fa-spinner books__loading--spinner"></i>
                 </div>
             </div>
         </div>
