@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Ecommerce-Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="/about.css">
+</head>
+<body>
+    <nav>
+        <div class="nav__container">
+            <img src="./assets/Library.svg" class="logo" alt="">
+
+            <ul class="nav__links">
+                <li><a href="/index.html" class="nav__link">Home</a></li>
+                <li><a href="/About.html" class="nav__link">About</a></li>
+                <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
+            </ul>
+
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick="closeMenu()">Books</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="about_me">About Me</h1>
+
+    <section class="main-content">
+        <div class="profile-picture">
+            <img src="./assets/book-1.jpeg" alt="My Profile Picture">
+        </div>
+
+        <article>
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Age:</strong> 30</p>
+            <p><strong>Location:</strong> Cityville, Country</p>
+            <p><strong>Occupation:</strong> Web Developer</p>
+        </article>
+
+        <article>
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod urna eu enim facilisis, sit amet auctor ex sollicitudin...</p>
+        </article>
+
+        <article>
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> john.doe@example.com</p>
+            <p><strong>Phone:</strong> +1 123-456-7890</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
